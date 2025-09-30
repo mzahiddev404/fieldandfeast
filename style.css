@@ -1,7 +1,6 @@
 /* CSS BY MUHAMMAD ZAHID */
 
-/* IMPORTED FONTS */
-/* (in index.html page) */
+/* IMPORTED FONTS (are in index.html page)*/
 
 /* CSS RESET */
 *, *::before, *::after {
@@ -86,11 +85,16 @@ section {
   gap: 1rem;
 }
 .card {
-  background: var(--linen);
+  background: var(--olive-green);
+  color: var(--linen);
   padding: 1rem;
   border-radius: var(--radius);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+.card h3 {
+  color: var(--linen);
+}
+
 .card.wide {
   grid-column: 1 / -1;
 }
@@ -116,15 +120,15 @@ section {
 }
 .btn {
   display: block;
+  width: 100%;     /* stretch entire width*/
   text-align: center;
   background: var(--olive-green);
-  color: white;
+  color: var(--linen);
   padding: 1rem;
   border-radius: var(--radius);
   text-decoration: none;
   font-weight: 700;
-  margin: 2rem auto;
-  max-width: 20rem;
+  margin: 2rem 0;
 }
 
 /* FOOTER */
@@ -134,11 +138,16 @@ footer {
   color: var(--soft-white);
   padding: 2rem;
   margin-top: 2rem;
+  
 }
 footer a {
   color: var(--champagne-gold);
   text-decoration: none;
 }
+footer address {
+  font-style: normal; /* removes italics */
+}
+
 
 /* MEDIA QUERY (medium) */
 @media (min-width: 600px) {
