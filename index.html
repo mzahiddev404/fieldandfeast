@@ -3,66 +3,216 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Field & Feast</title>
     </head>
     <body>
         
-(fieldandfeast-logo image)
-Field & Feast
-Harvested with Care, Served with Elegance
+        <!-- IMPORTED FONTS -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet"
+        />
 
-About Us
-Offerings
-Gallery
+        <!-- LINK TO CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-Welcome to Field & Feast
-At Field & Feast, we believe that the finest meals begin at the source. Rooted in tradition yet refined for the modern palate, our farm-to-table philosophy celebrates the beauty of seasonality, sustainability, and craftsmanship. From the sun-drenched fields where our produce is grown to the artfully curated dishes we serve, every detail is designed to bring you an experience of unparalleled quality and flavor.
+    
+    <body>
+        <!-- HEADER -->
+        <header class="site-header">
+        <div class="header-inner">
+            <img
+            src="images/fieldandfeast-logo.png"
+            alt="Field and Feast Logo"
+            class="logo"
+            />
+            <h1>Field &amp; Feast</h1>
+            <p class="tagline">Harvested with Care, Served with Elegance</p>
+        </div>
 
-Our Offerings
-Artisan Provisions
-Hand-selected, seasonal ingredients sourced from our estate farm and trusted local growers. Each item is chosen for its freshness, flavor, and integrity.
+        <!-- NAVIGATION -->
+        <nav class="site-nav">
+            <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#offerings">Offerings</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+        </header>
 
-Exclusive Dining Experiences
-Join us for intimate chef-led tastings and farm-to-table feasts, where carefully crafted menus highlight the best of the season.
+        <!-- MAIN -->
+        <main>
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>Welcome to Field &amp; Feast</h2>
+            <p>
+            At Field &amp; Feast, we believe that the finest meals begin at the
+            source. Rooted in tradition yet refined for the modern palate, our
+            farm-to-table philosophy celebrates the beauty of seasonality,
+            sustainability, and craftsmanship. From the sun-drenched fields where
+            our produce is grown to the artfully curated dishes we serve, every
+            detail is designed to bring you an experience of unparalleled quality
+            and flavor.
+            </p>
+        </section>
 
-The Field & Feast Monthly Basket
-Experience a curated selection of premium seasonal ingredients delivered to your doorstep each month.
+        <!-- OFFERINGS SECTION -->
+        <section id="offerings">
+            <h2>Our Offerings</h2>
+            <div class="offerings-grid">
+            <article class="card">
+                <h3>Artisan Provisions</h3>
+                <p>
+                Hand-selected, seasonal ingredients sourced from our estate farm
+                and trusted local growers. Each item is chosen for its freshness,
+                flavor, and integrity.
+                </p>
+            </article>
 
-Hand-Harvested Produce: Fresh, organic fruits and vegetables.
-Artisan-Crafted Goods: Specialty cheeses, house-made preserves, and small-batch baked goods.
-Exclusive Recipes & Pairings: Thoughtfully designed by our chefs to inspire culinary creativity.
+            <article class="card">
+                <h3>Exclusive Dining Experiences</h3>
+                <p>
+                Join us for intimate chef-led tastings and farm-to-table feasts,
+                where carefully crafted menus highlight the best of the season.
+                </p>
+            </article>
 
-Elevate your home dining with the finest farm-to-table offerings, elegantly packaged and delivered with care.
+            <article class="card wide">
+                <h3>The Field &amp; Feast Monthly Basket</h3>
+                <p>
+                Experience a curated selection of premium seasonal ingredients
+                delivered to your doorstep each month.
+                </p>
+                <ul>
+                <li>
+                    <strong>Hand-Harvested Produce:</strong> Fresh, organic fruits
+                    and vegetables.
+                </li>
+                <li>
+                    <strong>Artisan-Crafted Goods:</strong> Specialty cheeses,
+                    house-made preserves, and small-batch baked goods.
+                </li>
+                <li>
+                    <strong>Exclusive Recipes &amp; Pairings:</strong> Thoughtfully
+                    designed by our chefs to inspire culinary creativity.
+                </li>
+                </ul>
+                <p>
+                Elevate your home dining with the finest farm-to-table offerings,
+                elegantly packaged and delivered with care.
+                </p>
+            </article>
+            </div>
+        </section>
 
-A Gallery of Field & Feast
-Experience the elegance and artistry behind Field & Feast through our curated collection of images. From lush fields and handcrafted ingredients to beautifully plated farm-to-table creations, each photo tells the story of our commitment to excellence.
+        <!-- GALLERY SECTION -->
+        <section id="gallery">
+            <h2>A Gallery of Field &amp; Feast</h2>
+            <p>
+            Experience the elegance and artistry behind Field &amp; Feast through
+            our curated collection of images. From lush fields and handcrafted
+            ingredients to beautifully plated farm-to-table creations, each photo
+            tells the story of our commitment to excellence.
+            </p>
 
-(tomatoes image)
-Heirloom tomatoes at peak ripeness.
+            <div class="gallery-grid">
+            <figure>
+                <img
+                src="images/tomatoes-200w.jpg"
+                srcset="
+                    images/tomatoes-200w.jpg 200w,
+                    images/tomatoes-300w.jpg 300w,
+                    images/tomatoes-600w.jpg 600w
+                "
+                sizes="(min-width:1200px) 20vw, (min-width:900px) 33vw, 100vw"
+                alt="Heirloom tomatoes at peak ripeness"
+                />
+                <figcaption>Heirloom tomatoes at peak ripeness.</figcaption>
+            </figure>
 
-(olive-oil image)
-Drizzling golden olive oil over fresh harvest.
+            <figure>
+                <img
+                src="images/olive-oil-200w.jpg"
+                srcset="
+                    images/olive-oil-200w.jpg 200w,
+                    images/olive-oil-300w.jpg 300w,
+                    images/olive-oil-600w.jpg 600w
+                "
+                sizes="(min-width:1200px) 20vw, (min-width:900px) 33vw, 100vw"
+                alt="Drizzling golden olive oil"
+                />
+                <figcaption>Drizzling golden olive oil over fresh harvest.</figcaption>
+            </figure>
 
-(table-setting image)
-Elegant tablescape under the evening sky.
+            <figure>
+                <img
+                src="images/table-setting-200w.jpg"
+                srcset="
+                    images/table-setting-200w.jpg 200w,
+                    images/table-setting-300w.jpg 300w,
+                    images/table-setting-600w.jpg 600w
+                "
+                sizes="(min-width:1200px) 20vw, (min-width:900px) 33vw, 100vw"
+                alt="Elegant outdoor tablescape"
+                />
+                <figcaption>Elegant tablescape under the evening sky.</figcaption>
+            </figure>
 
-(chef-plating image)
-Artful plating with seasonal ingredients.
+            <figure>
+                <img
+                src="images/chef-plating-200w.jpg"
+                srcset="
+                    images/chef-plating-200w.jpg 200w,
+                    images/chef-plating-300w.jpg 300w,
+                    images/chef-plating-600w.jpg 600w
+                "
+                sizes="(min-width:1200px) 20vw, (min-width:900px) 33vw, 100vw"
+                alt="Chef plating seasonal dish"
+                />
+                <figcaption>Artful plating with seasonal ingredients.</figcaption>
+            </figure>
 
-(basket image)
-Our monthly basket, curated with care.
+            <figure>
+                <img
+                src="images/basket-200w.jpg"
+                srcset="
+                    images/basket-200w.jpg 200w,
+                    images/basket-300w.jpg 300w,
+                    images/basket-600w.jpg 600w
+                "
+                sizes="(min-width:1200px) 20vw, (min-width:900px) 33vw, 100vw"
+                alt="Curated monthly basket"
+                />
+                <figcaption>Our monthly basket, curated with care.</figcaption>
+            </figure>
+            </div>
 
-View Our Full Gallery
+            <a href="#" class="btn">View Our Full Gallery</a>
+        </section>
 
-123 Estate Lane, Wine Country, CA
-(555) 123-4567
-hello@fieldandfeast.com
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <address>
+            <p><strong>123 Estate Lane, Wine Country, CA</strong></p>
+            <p>(555) 123-4567</p>
+            <p>
+                <a href="mailto:hello@fieldandfeast.com">hello@fieldandfeast.com</a>
+            </p>
+            </address>
 
-Instagram 
-Facebook
+            <ul class="social-links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            </ul>
+        </section>
+        </main>
 
 
-
+        <!-- FOOTER -->
+        <footer>
+        <p>&copy; 2025 Field &amp; Feast</p>
+        </footer>
 
     </body>
 </html>

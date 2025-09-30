@@ -1,24 +1,168 @@
 /* CSS BY MUHAMMAD ZAHID */
+
 /* IMPORTED FONTS */
+/* (in index.html page) */
+
 /* CSS RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+ul {
+  padding-left: 1rem;
+}
+
 /* ROOT VARIABLES */
+:root {
+  --midnight-blue: #1F2A44;
+  --olive-green: #76885B;
+  --champagne-gold: #E5C185;
+  --linen: #F8F4EC;
+  --dark-charcoal: #2B2B2B;
+  --soft-white: #FAF9F6;
+  --space: 1rem;
+  --radius: 6px;
+}
+
 /* GLOBAL STYLES (mobile first/small) */
+body {
+  font-family: "Playfair Display", serif;
+  line-height: 1.6;
+  background: var(--soft-white);
+  color: var(--dark-charcoal);
+  padding: var(--space);
+}
+h1, h2, h3 {
+  color: var(--midnight-blue);
+  margin-bottom: 0.5rem;
+}
+section {
+  margin: 2rem auto;
+  max-width: 70rem;
+}
+
+/* HEADER */
+.site-header {
+  background: var(--midnight-blue);
+  color: var(--soft-white);
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+.logo {
+  max-width: 120px;
+  margin: 0 auto 1rem;
+}
+.tagline {
+  font-style: italic;
+  color: var(--champagne-gold);
+}
+
+/* NAVIGATION */
+.site-nav {
+  background: var(--champagne-gold);
+  margin-top: 1rem;
+}
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+.site-nav a {
+  text-decoration: none;
+  color: var(--midnight-blue);
+  font-weight: 700;
+}
+
+/* OFFERINGS */
+.offerings-grid {
+  display: grid;
+  gap: 1rem;
+}
+.card {
+  background: var(--linen);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card.wide {
+  grid-column: 1 / -1;
+}
+
+/* GALLERY */
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.gallery-grid figure {
+  text-align: center;
+  background: var(--linen);
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.gallery-grid figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: var(--dark-charcoal);
+}
+.btn {
+  display: block;
+  text-align: center;
+  background: var(--olive-green);
+  color: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 700;
+  margin: 2rem auto;
+  max-width: 20rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: var(--midnight-blue);
+  color: var(--soft-white);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+footer a {
+  color: var(--champagne-gold);
+  text-decoration: none;
+}
+
 /* MEDIA QUERY (medium) */
+@media (min-width: 600px) {
+  .offerings-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card.wide {
+    grid-column: 1 / -1;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* MEDIA QUERY (large) */
+@media (min-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* MEDIA QUERY (xl) */
-
-
-Styles
-Imported fonts
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-Colors
-midnight-blue: #1F2A44;
-olive-green: #76885B;
-champagne-gold: #E5C185;
-linen: #F8F4EC;
-dark-charcoal: #2B2B2B;
-soft-white: #FAF9F6;
-
-Font
-Playfair Display
+@media (min-width: 1200px) {
+  .gallery-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
